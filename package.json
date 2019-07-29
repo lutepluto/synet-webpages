@@ -1,0 +1,13 @@
+{
+  "name": "synet-webpages",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:lutepluto/synet-webpages.git",
+  "author": "lutepluto <lutepluto@gmail.com>",
+  "devDependencies": {
+    "webpack": "^4.38.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
