@@ -21,10 +21,10 @@ const entries = glob.sync(resolveBase('./src/scripts/entries/*.js'))
 const htmls = Object.keys(entries)
   .map(key => {
     const filename = `./pages/${key}.html`;
-    const template = resolveBase(`src/pages/${key}.html`);
+    const filepath = resolveBase(`src/pages/${key}.html`);
     return new HtmlWebpackPlugin({
       filename,
-      template,
+      template: `ejs-compiled-loader!${filepath}`,
       inject: true,
       chunks: [key]
     })
@@ -39,7 +39,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'images': resolveBase('src/public/images')
+      'styles': resolveBase('src/styles'),
+      'images': resolveBase('src/public/images'),
+      'assets': resolveBase('src/public/assets')
     }
   },
   module: {
@@ -50,19 +52,13 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(png|jpg|jpeg)$/,
+        test: /\.(png|jpg|jpeg)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              fallback: 'file-loader'
-            }
-          },
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
+              name: '[hash].[ext]',
               outputPath: 'images'
             }
           }

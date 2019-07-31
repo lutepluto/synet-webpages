@@ -37,7 +37,8 @@ module.exports = webpackMerge(baseConfig, {
   devServer: {
     contentBase: process.cwd(),
     publicPath: '/build/',
-    hot: true
-  },
-  stats: 'verbose'
+    hot: true,
+    hotOnly: true,
+    port: 3000
+  }
 });

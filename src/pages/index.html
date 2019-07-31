@@ -4,10 +4,443 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="目标是四大、快消、金融、互联网等名企？担心简历石沉大海，面试被虐？Synet提供与500强导师一对一课程及名企实习职位，在最短时间内，最有效帮你拿Offer!">
+  <meta name="description" content="目标是四大、快消、金融、互联网等名企？担心简历石沉大海，面试被虐？Synet提供与500强导师一对一课程及名企实习职位，在最短时间内，最有效帮你拿Offer!">
 
-  <title>Synet</title>
+  <title>Synet 你的私人求职导师</title>
 </head>
 <body>
-  Synet home
+  
+  <main role="main">
+    <div class="banner">
+        <div id="bannerCarousel" class="consultant__carousel carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="<%= require('images/banner-1.png') %>" alt="banner1">
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('images/banner-2.png') %>" alt="banner2">
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('images/banner-3.png') %>" alt="banner3">
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('images/banner-4.png') %>" alt="banner4">
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav class="navbar topbar">
+      <div class="topbar__title">30分钟免费咨询，开启你的个性化求职方案</div>
+        <a href="#" class="topbar__btn btn btn__primary">立即领取</a>
+    </nav>
+
+    <div class="boxer boxer--bottom boxer__service">
+      <div class="boxer__container">
+        <h3 class="service__intro">为什么需要求职咨询？</h3>
+        <h2 class="service__title">你还在求职路上单打独斗？</h2>
+        <div class="service__text">因为当你还在为以上问题烦忧和探索时<br>别人已经在专业的 Synet 500强咨询师指导下拿下心仪 offer</div>
+        <div class="service__banner">
+          <img src="<%= require('images/service-banner.png') %>" alt="service banner">
+        </div>
+        <h2 class="service__title">Synet 两大核心服务</h2>
+        <ul class="service__core">
+          <li class="core__item">
+            <h4 class="item__hd">
+              <span class="emphasis">6</span>个月<span class="emphasis">80%</span>的人<br>拿到最初期待的 Offer
+            </h4>
+            <div class="item__bd">
+              <img src="<%= require('images/service-core-bg.png') %>" alt="service advantage" class="item__img">
+              <div class="item__bd-inner">
+                <span class="item__bd-arrow"></span>
+                <div class="item__title">求职全程缺乏安全感</div>
+                <div class="item__content">
+                  <span class="spot">远程实习</span>，以<span class="spot">实践为主</span>。<span class="spot">15人左右</span>的小班项目，保证质量，每位学员都有参与<span class="spot">导师一对一</span>指导机会。充实项目经历为你的<span class="spot">简历拔高含金量</span>。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="core__item">
+            <h4 class="item__hd">
+              <span class="emphasis">4</span>周拥有名企实践经历<br>简历通过率提升<span class="emphasis">60%</span>
+            </h4>
+            <div class="item__bd">
+              <img src="<%= require('images/service-core-bg.png') %>" alt="service advantage" class="item__img">
+              <div class="item__bd-inner">
+                <span class="item__bd-arrow"></span>
+                <div class="item__title">STE名企实践计划</div>
+                <div class="item__content">
+                  <span class="spot">远程实习</span>，以<span class="spot">实践为主</span>。<span class="spot">15人左右</span>的小班项目，保证质量，每位学员都有参与<span class="spot">导师一对一</span>指导机会。充实项目经历为你的<span class="spot">简历拔高含金量</span>。
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="referto">
+          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxer boxer__adv">
+      <div class="boxer__container">
+        <h3 class="adv__intro">什么样的求职咨询才是最有效的？</h3>
+        <h2 class="adv__title">为什么 <span class="em">Synet 1V1</span> 不一样？</h2>
+        <h3 class="adv__subtitle">
+          <span class="subtitle__inner">在求职路上给你私人订制的指导</span>
+        </h3>
+        <div class="adv__core">
+          <div class="core__item core__item--other">
+            <h4 class="item__hd">其他机构</h4>
+            <div class="item__bd">
+              <ul class="adv__other">
+                <li data-toggle="pie" data-target="#pie1">导师上课也依旧以单向输出为主，缺乏引导学员思考的意识...</li>
+                <li data-toggle="pie" data-target="#pie2">讲课内容空泛，一到实际面试仍然发怵...</li>
+                <li data-toggle="pie" data-target="#pie3">花了好多钱买的视频课，小班课才看20分钟就昏昏欲睡...</li>
+              </ul>
+            </div>
+          </div>
+          <div class="core__item">
+            <h4 class="item__hd">Synet 1V1</h4>
+            <div class="item__bd">
+              <div class="adv__pie">
+                <img id="pie1" src="<%= require('images/pie-1.png') %>" alt="激发主动思考 构建求职元认识">
+                <img id="pie2" class="d-none" src="<%= require('images/pie-2.png') %>" alt="搭建求职场景 提升实践能力">
+                <img id="pie3" class="d-none" src="<%= require('images/pie-3.png') %>" alt="问题探究式学习 掌握真正职业技能">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxer boxer__norm boxer--top boxer--bottom">
+      <div class="boxer__container">
+        <h3 class="norm__intro">
+          500强专业人士<span class="intro__sign">≠</span>好的咨询师
+        </h3>
+        <h2 class="norm__title">倒是筛选 我们是认真的</h2>
+        <div class="norm__step">
+          <h4 class="step__title"><span class="text-cold">六</span>道步骤，层层筛选</h4>
+          <div class="step__inner">
+            <div class="step__row">
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-recruitment.png') %>" alt="招募">
+                </div>
+                <div class="step__name">招募</div>
+              </div>
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-application.png') %>" alt="报名">
+                </div>
+                <div class="step__name">报名</div>
+              </div>
+            </div>
+            <div class="step__row">
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-interview.png') %>" alt="面试">
+                </div>
+                <div class="step__name">面试</div>
+              </div>
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-speech.png') %>" alt="试讲">
+                </div>
+                <div class="step__name">试讲</div>
+              </div>
+            </div>
+            <div class="step__row">
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-assessment.png') %>" alt="考评">
+                </div>
+                <div class="step__name">考评</div>
+              </div>
+              <div class="step__item">
+                <div class="step__icon">
+                  <img src="<%= require('images/step-online.png') %>" alt="上线">
+                </div>
+                <div class="step__name">上线</div>
+              </div>
+            </div>
+          </div>
+          <ol class="step__inner step__inner--desktop">
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-recruitment.png') %>" alt="招募">
+              </div>
+              <div class="step__name">招募</div>
+            </li>
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-application.png') %>" alt="报名">
+              </div>
+              <div class="step__name">报名</div>
+            </li>
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-interview.png') %>" alt="面试">
+              </div>
+              <div class="step__name">面试</div>
+            </li>
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-speech.png') %>" alt="试讲">
+              </div>
+              <div class="step__name">试讲</div>
+            </li>
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-assessment.png') %>" alt="考评">
+              </div>
+              <div class="step__name">考评</div>
+            </li>
+            <li class="step__item">
+              <div class="step__icon image--dashed">
+                <img src="<%= require('images/step-online.png') %>" alt="上线">
+              </div>
+              <div class="step__name">上线</div>
+            </li>
+          </ol>
+        </div>
+        <div class="norm__criterion">
+          <h4 class="criterion__title"><span class="text-cold">三</span>大基准，缺一不可</h4>
+          <div class="criterion__inner">
+            <div class="criterion__box">
+              <div class="box__inner">
+                <span class="icon-check"></span>专业能力
+              </div>
+            </div>
+            <div class="criterion__box">
+              <div class="box__inner">
+                <span class="icon-check"></span>咨询引导能力
+              </div>
+            </div>
+            <div class="criterion__box">
+              <div class="box__inner">
+                <span class="icon-check"></span>态度价值观
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxer boxer__consultant">
+      <div class="boxer__container">
+        <h2 class="boxer__title">导师人才库</h2>
+        <div class="boxer__text">行业唯一一家100%实名照片认证</div>
+        <div class="consultant__feat">
+          <div class="feat__item">
+            <div class="feat__img">
+              <img src="<%= require('images/consultant-company.png') %>" alt="行业内专业500强人士">
+            </div>
+            <div class="feat__desc">行业内专业<span class="emphasis">500</span>强人士</div>
+          </div>
+          <div class="feat__item">
+            <div class="feat__img">
+              <img src="<%= require('images/consultant-percentage.png') %>" alt="通过率仅30%">
+            </div>
+            <div class="feat__desc">通过率仅<span class="emphasis">30</span>%</div>
+          </div>
+          <div class="feat__item">
+            <div class="feat__img">
+              <img src="<%= require('images/consultant-year.png') %>" alt="在其行业内工作时长超过5年">
+            </div>
+            <div class="feat__desc">在其行业内工作时长超过<span class="emphasis">5</span>年</div>
+          </div>
+        </div>
+        <div id="consultantCarousel" class="consultant__carousel carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="<%= require('assets/consultant1.png') %>" alt="单双双">
+              <div class="carousel-caption">
+                <h5 class="consultant-name">单双双</h5>
+                <div class="consultant-job">原联合利华管培<br>现为世界最大化妆品集团产品经理</div>
+                <div class="consultant-panel">
+                  <div class="panel active" id="consultant-1-panel-1">
+                    <h6 class="panel__title">导师背景</h6>
+                    <div class="panel__content">
+                      涉猎咨询行业，传统块消和奢侈品行业。曾在埃森哲做管理咨询PMO的实习长达一年，在强生医疗做商务运营的实习。结合自己以往的面试经历，她已经能完全能够很好地从面试官的角度出发，帮助求职者360度全面地透视和解析快消类工作的岗位需求、人才需求和面试技巧了。
+                    </div>
+                  </div>
+                  <div class="panel"  id="consultant-1-panel-2">
+                    <h6 class="panel__title">导师有话说</h6>
+                    <div class="panel__content">
+                      许多人问我，为什么选择 FMCG？因为它的产品更新换代速度非常快，这意味着我的工作和学习认知都要非常地与与时俱进，这就为我的成长和学习新东西提供源源不断的动力。而为什么只青睐最top的FMCG？因为这里为我提供了最完善、最体系化的培训，可以帮助我之后去应对各种类型的快消管理运营工作。我将告诉你的是，在最top的FMCG，每个优秀的快消人是如何360度存在的？
+                    </div>
+                  </div>
+                  <ol class="panel__indicator" data-toggle="consultantIndicator">
+                    <li class="active" data-target="#consultant-1-panel-1"></li>
+                    <li  data-target="#consultant-1-panel-2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('assets/consultant2.png') %>" alt="王硕">
+              <div class="carousel-caption">
+                <h5 class="consultant-name">王硕</h5>
+                <div class="consultant-job">原安永管理咨询业务项目经理</div>
+                <div class="consultant-panel">
+                  <div class="panel active" id="consultant-2-panel-1">
+                    <h6 class="panel__title">导师背景</h6>
+                    <div class="panel__content">
+                      喜爱运动，还很幽默。研究生就读于美国专业排名前5的罗格斯大学-人力资源管理专业；本科就读于天津大学-英语专业。本科在校期间拿到托福 112分，GMAT 760分的成绩，并且担任校辩论队队长； 曾任强生全球总部内部咨询顾问；目前担任安永战略咨询经理一职，拥有多年咨询行业从业经验。
+                    </div>
+                  </div>
+                  <div class="panel" id="consultant-2-panel-2">
+                    <h6 class="panel__title">导师有话说</h6>
+                    <div class="panel__content">
+                      作为国外知名大学人力资源专业的毕业生、一名曾经的互联网公司招聘专家和一名在“求职竞技场”中生存下来的老玩家，我将用自己的专业知识和经验为小朋友们提供关于撰写简历的种种技巧，解答你以下及更多棘手问题：<br>
+                      · 简历中最吸引HR的是什么？是教育背景？实习？还是课外活动？<br>
+                      · 在名不见经传的小公司实习，是否需要将这份经历写在简历上？<br>
+                      ……
+                    </div>
+                  </div>
+                  <ol class="panel__indicator" data-toggle="consultantIndicator">
+                    <li class="active" data-target="#consultant-2-panel-1"></li>
+                    <li data-target="#consultant-2-panel-2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('assets/consultant3.png') %>" alt="曾润坤">
+              <div class="carousel-caption">
+                <h5 class="consultant-name">曾润坤</h5>
+                <div class="consultant-job">网易云课堂高级运营经理</div>
+                <div class="consultant-panel">
+                  <div class="panel active" id="consultant-3-panel-1">
+                    <h6 class="panel__title">导师背景</h6>
+                    <div class="panel__content">
+                      南京大学市场营销硕士毕业，在校招中斩获互联网、快消等不同领域的多个offer，如达能市场管培、华为、微软等；<br>
+                      一个爱折腾、爱探索、爱挑战自己的青年。曾是国内领先的社交媒体和数字营销内容与招聘平台SocialBeta 初创期核心团队成员之一；也曾办过TEDx，在CAPE（全球青年实践网络）工作过。
+                    </div>
+                  </div>
+                  <div class="panel" id="consultant-3-panel-2">
+                    <h6 class="panel__title">导师有话说</h6>
+                    <div class="panel__content">
+                      和面试官的面试就像谈恋爱，是两情相悦的事，我将会告诉你：<br>
+                      · 谈恋爱vs面试背后非常契合的本质原因，让你在面试前就能够产生情绪代入感，真正到了面试时能做到尽可能的放松；<br>
+                      · 一些小技巧，从见面试官开始如何展现自己；<br>
+                      · 面试中各种尖锐刁钻古怪问题怎样击破；<br>
+                      · 如何引导让面试官问你已经胸有成竹的问题！<br>
+                      如果你也是对互联网行业、快消行业有着一腔热血，励志加入，不如在去心仪企业“恋(mian)爱(shi)”前，和我聊聊吧～<br>
+                    </div>
+                  </div>
+                  <ol class="panel__indicator" data-toggle="consultantIndicator">
+                    <li class="active" data-target="#consultant-3-panel-1"></li>
+                    <li data-target="#consultant-3-panel-2"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="<%= require('assets/consultant4.png') %>" alt="刘光明">
+              <div class="carousel-caption">
+                <h5 class="consultant-name">刘光明</h5>
+                <div class="consultant-job">东兴证券资产管理部投资经理</div>
+                <div class="consultant-panel">
+                  <div class="panel active">
+                    <h6 class="panel__title">导师背景</h6>
+                    <div class="panel__content">
+                      1997年开始涉足股票市场，2001年大学毕业即加入证券公司，至今已在券商从营业部到总部的各层级工作过，现为某国资背景上市券商资产管理总部的投资经理。熟悉证券市场，了解证券公司的常规职能设置，工作内容以及未来发展趋势。结合丰富的从业经验，相信能够为有志于加入证券行业的青年才俊提供有价值的求职建议。
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <h6 class="panel__title">导师有话说</h6>
+                    <div class="panel__content">
+                      证券行业令很多人向往，的确其中充满了机遇，特别是那种在短时间内实现阶层跨越或财务自由的机遇。但是，生存者偏差往往令局外人忽略了这个行业与生俱来的风险，压力与残酷。作为有志于加入证券行业的候选者，是否对这个行业已经有了足够的了解呢。本人愿在这里与你分享多年从业经历所带来的经验与见解。
+                    </div>
+                  </div>
+                  <ol class="panel__indicator">
+                    <li class="active"></li>
+                    <li></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#consultantCarousel" role="button" data-slide="prev">
+            <img src="<%= require('images/arrow-left.png') %>" alt="prevous">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#consultantCarousel" role="button" data-slide="next">
+              <img src="<%= require('images/arrow-right.png') %>" alt="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="referto">
+          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxer boxer--top boxer__student">
+      <div class="boxer__container">
+        <h2 class="boxer__title">学员评价</h2>
+        <div class="student__slideshow">
+          <div class="slideshow__item">
+            <div class="slideshow__hd">
+              <div class="hd__img">
+                <div class="hd__img-inner">
+                  <img src="<%= require('assets/student1.jpg') %>" alt="student">
+                </div>
+              </div>
+              <h4 class="hd__title">林昕</h4>
+              <div class="hd__subtitle">西南财经大学</div>
+            </div>
+            <div class="slideshow__bd">
+              <h5 class="bd__title">百事市场部Offer</h5>
+              <div class="bd__content">
+                在这个VIP项目里，周咨询师（宝洁 零售创新项目经理 ）有帮我梳理市场部的流程和职能，与之相符的也有职能和辅助部门和他们之间的关系，我也就能清楚之后如果我进入到这样的岗位上去，需要和哪些人打交道。我在项目中还做了很多和消费者洞察有关的采访，正好在上完课后的几天我就遇到一个面试涉及到“消费者洞察”的，我当时说的很好，而且完全cover到了当时的面试官所想要的一个人才的特质，我都能感觉到他们对我很满意，这也给我很大的心理上的成就感。
+              </div>
+            </div>
+          </div>
+          <div class="slideshow__item">
+            <div class="slideshow__hd">
+              <div class="hd__img">
+                <div class="hd__img-inner">
+                  <img src="<%= require('assets/student2.jpg') %>" alt="student">
+                </div>
+              </div>
+              <h4 class="hd__title">周宏毅</h4>
+              <div class="hd__subtitle">宁波诺丁汉大学</div>
+            </div>
+            <div class="slideshow__bd">
+              <h5 class="bd__title">普华永道风险咨询Offer</h5>
+              <div class="bd__content">
+                临时放弃出国、秋招0准备、不知道自己合适什么岗位行业，像我这样的，赶时间很紧的，一对一上课效率会高很多。王咨询师(安永 管理咨询经理)讲的，每家公司的企业文化和风格，具体哪一个岗位的工作内容更适合我申请等等，深入浅出，我觉得非常好。如果上大课，说的东西是我本来知道的，那我等于花了时间也get不到重点，一对一说的东西会更有针对性，像我哪方便缺失也能很快补充到，所以一对一的话效率还是很高的。
+              </div>
+            </div>
+          </div>
+          <div class="slideshow__item">
+            <div class="slideshow__hd">
+              <div class="hd__img">
+                <div class="hd__img-inner">
+                  <img src="<%= require('assets/student3.jpg') %>" alt="student">
+                </div>
+              </div>
+              <h4 class="hd__title">叶丽君</h4>
+              <div class="hd__subtitle">伦敦政治经济学院</div>
+            </div>
+            <div class="slideshow__bd">
+              <h5 class="bd__title">玛氏管培生Offer</h5>
+              <div class="bd__content">
+                我一直有上李老师（卡夫亨氏 市场经理）的课，她有和我说一些她自己的切身经验，因为我们两个人大学方面的背景很像，这让我很惊喜。我不知道是不是班主任帮我花了很多时间找的一个背景这么相似的咨询师？我们俩聊了之后发现我们走过的路真的还有蛮多重合的，她就给我很多小tips，我觉得她好像一个智多星，在一个个给我抛出求职锦囊！以及玛氏的两场面试前都分别约老师进行了突击有很大的效果，让我短短一个月就能拿到offer。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="referto">
+          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>
