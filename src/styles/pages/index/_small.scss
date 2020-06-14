@@ -905,3 +905,17 @@
     }
   }
 }
+
+.modal-assistant-wechat {
+  .modal-title {
+    color: $color-cold;
+  }
+
+  .modal-body {
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

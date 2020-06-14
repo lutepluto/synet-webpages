@@ -32,7 +32,7 @@
     </div>
     <nav class="navbar topbar">
       <div class="topbar__title">30分钟免费咨询，开启你的个性化求职方案</div>
-        <a href="#" class="topbar__btn btn btn__primary">立即领取</a>
+        <a href="#" data-toggle="modal" data-target="#assitantWechat" class="topbar__btn btn btn__primary">立即领取</a>
     </nav>
 
     <div class="boxer boxer--bottom boxer__service">
@@ -53,9 +53,9 @@
               <img src="<%= require('images/service-core-bg.png') %>" alt="service advantage" class="item__img">
               <div class="item__bd-inner">
                 <span class="item__bd-arrow"></span>
-                <div class="item__title">求职全程缺乏安全感</div>
+                <div class="item__title">Synet VIP 求职计划</div>
                 <div class="item__content">
-                  <span class="spot">远程实习</span>，以<span class="spot">实践为主</span>。<span class="spot">15人左右</span>的小班项目，保证质量，每位学员都有参与<span class="spot">导师一对一</span>指导机会。充实项目经历为你的<span class="spot">简历拔高含金量</span>。
+                  <span class="spot">12个月</span>长期服务，覆盖求职全流程。<span class="spot">一对一</span>匹配名企咨询师，解决求职过程中<span class="spot">职业规划迷茫、简历及面试缺乏指导</span>等问题。
                 </div>
               </div>
             </div>
@@ -70,14 +70,14 @@
                 <span class="item__bd-arrow"></span>
                 <div class="item__title">STE名企实践计划</div>
                 <div class="item__content">
-                  <span class="spot">远程实习</span>，以<span class="spot">实践为主</span>。<span class="spot">15人左右</span>的小班项目，保证质量，每位学员都有参与<span class="spot">导师一对一</span>指导机会。充实项目经历为你的<span class="spot">简历拔高含金量</span>。
+                  <span class="spot">远程项目</span>，以<span class="spot">实践为主</span>。<span class="spot">15人左右</span>的小班项目，保证质量，每位学员都有参与<span class="spot">导师一对一</span>指导机会。充实项目经历为你的<span class="spot">简历拔高含金量</span>。
                 </div>
               </div>
             </div>
           </li>
         </ul>
         <div class="referto">
-          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+          <a href="#" data-toggle="modal" data-target="#assitantWechat" class="btn btn__primary">立即领取你的个性化求职方案</a>
         </div>
       </div>
     </div>
@@ -374,7 +374,7 @@
           </a>
         </div>
         <div class="referto">
-          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+          <a href="#" data-toggle="modal" data-target="#assitantWechat" class="btn btn__primary">立即领取你的个性化求职方案</a>
         </div>
       </div>
     </div>
@@ -436,7 +436,23 @@
           </div>
         </div>
         <div class="referto">
-          <a href="#" class="btn btn__primary">立即领取你的个性化求职方案</a>
+          <a href="#" data-toggle="modal" data-target="#assitantWechat" class="btn btn__primary">立即领取你的个性化求职方案</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-assistant-wechat" id="assitantWechat" tabindex="-1" role="dialog" aria-labelledby="添加Synet小助手，立即咨询" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">添加Synet小助手，立即咨询</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="<%= require('assets/assistant-wechat.jpeg') %>">
+          </div>
         </div>
       </div>
     </div>
