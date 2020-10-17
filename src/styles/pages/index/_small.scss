@@ -41,6 +41,12 @@
   }
 }
 
+.footer {
+  padding: 80px 0 100px;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
 .topbar {
   padding-top: px2rem(22);
   padding-bottom: px2rem(22);
@@ -53,6 +59,14 @@
     font-weight: 600;
     line-height: 30px;
     margin-right: px2rem(145);
+  }
+
+  &.topbar--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
   }
 }
 
