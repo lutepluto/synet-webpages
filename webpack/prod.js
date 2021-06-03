@@ -1,8 +1,5 @@
-const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 
 const baseConfig = require('./common');
 
@@ -27,27 +24,13 @@ module.exports = merge(baseConfig, {
               importLoaders: 1
             }
           },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [
-                require('autoprefixer')()
-              ]
-            }
-          },
+          'postcss-loader',
           'sass-loader'
         ]
       }
     ]
   },
   optimization: {
-    minimizer: [
-      new TerserPlugin({
-        cache: true,
-        parallel: true
-      }),
-      new OptimizeCSSAssetsPlugin({})
-    ],
     splitChunks: {
       chunks: 'initial',
       cacheGroups: {
@@ -61,7 +44,7 @@ module.exports = merge(baseConfig, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[hash].css'
+      filename: 'styles/[name].[contenthash].css'
     })
   ]
 });

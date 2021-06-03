@@ -1,6 +1,5 @@
 const path = require('path');
 const glob = require('glob');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const baseDir = process.cwd();
@@ -58,7 +57,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: '[hash].[ext]',
+              name: '[contenthash].[ext]',
               outputPath: 'images',
               esModule: false
             }
