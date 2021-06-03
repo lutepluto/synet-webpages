@@ -1,10 +1,9 @@
-const path = require('path');
 const webpack = require('webpack');
-const webpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 const baseConfig = require('./common');
 
-module.exports = webpackMerge(baseConfig, {
+module.exports = merge(baseConfig, {
   mode: 'development',
   module: {
     rules: [
@@ -30,7 +29,7 @@ module.exports = webpackMerge(baseConfig, {
   optimization: {
     runtimeChunk: 'single'
   },
-  devtool: 'cheap-eval-source-map',
+  devtool: 'eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],

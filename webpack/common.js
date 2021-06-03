@@ -59,7 +59,8 @@ module.exports = {
             options: {
               limit: 8192,
               name: '[hash].[ext]',
-              outputPath: 'images'
+              outputPath: 'images',
+              esModule: false
             }
           }
         ]

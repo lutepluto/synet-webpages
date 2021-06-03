@@ -1,13 +1,12 @@
-const path = require('path');
 const webpack = require('webpack');
-const webpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const baseConfig = require('./common');
 
-module.exports = webpackMerge(baseConfig, {
+module.exports = merge(baseConfig, {
   mode: 'production',
   module: {
     rules: [
